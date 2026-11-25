@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์คำนวนเงินเดือนของบริษัท</title>
+    <link rel="stylesheet" href="การคำนวณโปรแกรม.css">
+</head>
+<body>
+    <header>
+        <h1>บริษัท ซีซีเอ จำกัด</h1>
+        <h2>โปรเเกรมเงินคำนวนเงินสำรองเลี้ยงชีพของพนักงาน</h2>
+    </header>
+
+    <main>
+        <section id="calculato-section">
+            <h3>คำนวนเงินสำรองเลี้ยงชีพพนังงาน</h3>
+
+            <form id="pvdFrom">
+            <!--ช่องกรอกเงินเดือน-->
+            <div class="from-group">
+                <label for="salary">เงินเดือน (Salary):</label>
+                <input type="number" id="commisstion" name="commisstion" placeholder="กรอกค่าคอมมิชชั่น" min="0" required>
+                <span>บาท</span>
+            </div>
+
+            <!--ปุ่มคำนวน-->
+            <button type="button" id="btnCalculate">คำนวนเงินเดือนสำรองเลี้ยงชีพ</button>
+            </form>
+        </section>
+
+        <!--เเสดงผลลัพฑ์-->
+        <section id="result-section">
+            <h3>ผลการคำนวน</h3>
+            <p>รายรับรวมทั้งหมด: <span id="totalIncome">0</span>บาท</p>
+            <p>เงินสำรองเลี้ยงชีพที่ต้องหัก (5%):<span id="pvdAmount">0</span>บาท</p>
+            <p id="noteText"></p>
+        </section>
+    </main>
+
+    <!--ส่วนท้ายเว็บไซต์-->
+    <footer>
+        <p>&copy; บริษัท จาวาจาวา จำกัด - สงวนลิขสิทธิ์</p>
+    </footer>
+
+    
+    <script src="การคำนวณเงินเดือน.js"></script>
+</body>
+</html>

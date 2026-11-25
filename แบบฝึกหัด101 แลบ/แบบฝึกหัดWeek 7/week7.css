@@ -1,0 +1,126 @@
+
+/* ตั้งค่าพื้นฐาน */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0e7ff, #f3e8ff);
+    margin: 0;
+    padding: 30px 15px;
+    color: #333;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* หัวข้อหลัก */
+h2 {
+    text-align: center;
+    color: #5b21b6;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* กล่องแบบฝึกหัด */
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(91,33,182,0.15);
+}
+
+/* หัวข้อแต่ละข้อ */
+h3 {
+    color: #6d28d9;
+    margin-top: 0;
+    border-left: 5px solid #8b5cf6;
+    padding-left: 12px;
+}
+
+/* หมายเหตุ */
+small {
+    color: #777;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* ช่องกรอกข้อมูล */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 5px rgba(139,92,246,0.3);
+}
+
+/* ปุ่ม */
+button {
+    background: linear-gradient(135deg, #7c3aed, #4f46e5);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5b21b6;
+    transform: scale(1.03);
+}
+
+/* แสดงผลลัพธ์ */
+.result {
+    background: #f5f3ff;
+    color: #5b21b6;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+/* ซ่อนเส้นคั่นเดิม */
+hr {
+    display: none;
+}
+
+/* รองรับมือถือ */
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

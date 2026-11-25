@@ -1,0 +1,143 @@
+
+/* ตั้งค่าพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* พื้นหลังเว็บไซต์ */
+body {
+    font-family: Tahoma, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #ede9fe);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+/* ส่วนหัว */
+header {
+    background-color: #6366f1;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* ส่วนเนื้อหาหลัก */
+main {
+    flex: 1;
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* กล่องเลือก Loop */
+.controls {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* ข้อความ Label */
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #5145a8;
+}
+
+/* ช่องเลือก Loop */
+select {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    border: 2px solid #c4b5fd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+/* ปุ่มแสดงสูตรคูณ */
+button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    padding: 13px;
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #4f46e5;
+    transform: translateY(-2px);
+}
+
+/* กล่องแสดงผล */
+.result-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.result-container h2 {
+    text-align: center;
+    color: #5145a8;
+    margin-bottom: 20px;
+}
+
+/* พื้นที่แสดงสูตรคูณ */
+#output {
+    background-color: #eef2ff;
+    padding: 20px;
+    border-radius: 8px;
+    color: #4338ca;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* ส่วนท้าย */
+footer {
+    background-color: #312e81;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* รองรับมือถือ */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .controls,
+    .result-container {
+        padding: 18px;
+    }
+}

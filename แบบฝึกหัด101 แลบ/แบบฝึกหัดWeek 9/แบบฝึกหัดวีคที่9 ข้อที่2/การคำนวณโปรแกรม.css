@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background-image: url('ภาพยบริษัท1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #eee;
+    line-height: 1.6;
+}
+header{
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1{
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+header h2{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+main{
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+section{
+    background-color: #c2d3e4;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 2px solid #1e2022;
+}
+
+section h3{
+    color: #2563eb;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1e2022;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input{
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+input:focus{
+    outline: none;
+    border-color: #2563eb;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #1d4ed8;
+}
+
+#result-section p{
+    margin-bottom: 8px;
+}
+
+#result-section span{
+    font-weight: bold;
+    color: #16a43a;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+#noteText{
+    color: #dc2626;
+    font-size: 14px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 14px;
+}

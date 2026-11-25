@@ -1,0 +1,107 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #ede9fe);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+/* ส่วนหัว */
+header {
+    background: #6366f1;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* เนื้อหาหลัก */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+/* กล่องโปรแกรม */
+.container {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #c4b5fd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #6366f1;
+}
+
+/* ปุ่ม */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4f46e5;
+}
+
+/* ผลลัพธ์ */
+h2 {
+    margin-top: 20px;
+    color: #5b21b6;
+}
+
+#result {
+    background: #eef2ff;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    color: #4338ca;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* ส่วนท้าย */
+footer {
+    background: #312e81;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

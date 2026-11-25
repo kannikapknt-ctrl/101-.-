@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำนวนค่าบัตรผ่านพิพิธภัณฑ์ตามส่วนสูง</title>
+    <link rel="stylesheet" href="ค่าบัตรผ่าน.css">
+</head>
+<body>
+     <header>
+        <h1>ระบบคำนวนค่าบัตรผ่านพิพิธภัณฑ์ตามส่วนสูง</h1>
+     </header>
+
+     <main>
+        <section>
+            <h2>เงื่อนไขการคิดค่าการบริการ</h2>
+            <p>คำนวนค่าบัตรผ่านประตูเข้าชมพิพิธภัณฑ์ โดยพิจารณาจากส่วนสูงของผู้ชม ดังนี้:</p>
+            <ul>
+                <li>ส่วนสูงน้อยกว่าหรือเท่ากับ 130 เซนติเมตร: คำนวนค่าบัตรผ่านประตู 50บาท</li>
+                <li>ส่วนสูงมากกว่า 130 เซนติเมตรขึ้นไป: คำนวนค่าบัตรผ่านประตู 100 บาท</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>กรอกข้อมูลส่วนสูง</h2>
+            <form>
+               <label for="height">ส่วนสูง (ซม.)</label>
+               <input type="number" name="height" id="height" placeholder="ระบุส่วนสูงของคุณ...">
+               <button type="button">คำนวน</button>
+            </form>
+            <div id="result"></div>
+        </section>
+     </main>
+
+     <footer>
+        <p>&copy; 2026 Museum Ticket Calculator</p>
+     </footer>
+    <script src="ค่าบัตรผ่าน.js"></script>
+</body>
+</html>
